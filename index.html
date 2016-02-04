@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		What's your name?
+	</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+		<div class="logo">
+				<a href="#">
+					<img src="img/logo.png" alt="Monster Maker Name Generator" width="200px" height="231px" />
+				</a>
+		</div>
+	</div>
+	
+	<div id="monster_return"></div>
+
+
+	<h1>
+		Simply enter your name below and find out your Monster name:
+	</h1>
+
+	
+	
+	<form action="javascript:void(0);" name="monster">
+
+		<input type="text" class="text" name="realname" placeholder="Enter your name:"> 
+		<input type="button" class="button" name="button" Value="Make Me a Monstah!" onclick="generateName(this.form);">
+
+	</form>
+</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

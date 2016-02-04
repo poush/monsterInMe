@@ -1,0 +1,91 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	font-family: sans-serif;
+	background-color: #f7fdff;
+	font-size: 20px;
+}
+
+.container {
+}
+
+#header{
+}
+
+.logo{
+	padding-top:20px;
+	margin:auto;
+	text-align: center;
+}
+
+h1{
+	font-size: 0.8em;
+	text-align: center;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+	font-weight: normal;
+}
+
+.mouth-strip,
+.mouth-strip img {
+	width:100%;
+	margin-top:0;
+}
+
+form {
+	width:100%;
+	min-height:30%;
+	margin:auto;
+	padding:1em 0;
+	text-align: center;
+	background-color: #EEE;
+	font-size: 1em;
+	overflow: hidden;
+}
+
+.text, .text:focus {
+	width:80%;
+	height:2em;
+	font-size: 2em;
+	border:0;
+	border-left: 5px solid #DDD;
+	outline:0;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.button {
+	width:80%;
+	margin:auto;
+	padding: 0.5em 0;
+	border:0;
+	outline:0;
+	background-color: #CCC;
+	font-size: 2em;
+}
+
+.mouthbg {
+	background: url(img/bg.png) repeat; 
+	margin-top:-5px;
+}
+
+#monster_return {
+	background: url(img/mouth-top.png) no-repeat center top; 
+	background-size: 100%;
+	text-align: center;
+	font-size: 1em;
+	color: #FFF;
+	overflow: hidden;
+}
+
+.reveal {
+	font-size: 4em;
+	padding-top: 20px;
+}
