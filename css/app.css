@@ -1,0 +1,200 @@
+@import "bootstrap-form.css";
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+html{
+    height:80%;
+    width:100%;
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    display: block;
+
+}
+
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*Home Page styles codes*/
+
+body.home {
+    
+    background-color:#1A1A1A;
+    height: 100%;
+    width:100%;
+    color:#fff;
+}
+
+img.logo{
+    display: block;
+    width:200px;
+    margin:10px auto;
+    transition: width 2s ease-out;
+}
+
+.logo-then{
+    width:100px !important;
+}
+
+img.first{
+    position: fixed;
+    top:0;
+    width:100%;
+    height:150px;
+    z-index:10000;
+}
+img.first-then{
+    top:calc(50% - 150px);
+}
+
+img.second {
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:150px;
+    width:100%;
+    z-index: 1000;
+}
+img.second-then{
+    bottom:calc(50% - 50px);
+}
+
+.content{
+    /*display: none;*/
+    margin-top:120px;
+    transition: opacity 1s linear;
+    /*z-index: -111;*/
+}
+
+.content-then{
+    opacity:0;
+}
+
+.slide-from-top{
+    -webkit-animation-name: slide_from_top;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide_from_top {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top:calc(50% - 150px);
+    }
+}
+
+.slide-from-bottom{
+    -webkit-animation-name: slide_from_bottom;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide_from_bottom {
+    0% {
+        bottom: 0%;
+    }
+    100% {
+        bottom:calc(50% - 50px);
+
+    }
+}
+
+.slide-to-top{
+    -webkit-animation-name: slide_to_top;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide_to_top {
+    100% {
+        top: 0%;
+    }
+    0% {
+        top:calc(50% - 150px);
+    }
+}
+
+.slide-to-bottom{
+    -webkit-animation-name: slide_to_bottom;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes slide_to_bottom {
+    100% {
+        bottom: 0%;
+    }
+    0% {
+        bottom:calc(50% - 50px);
+
+    }
+}
+
+
+.slider-top{
+
+    width:100%;
+    /*margin-top: calc(0% - 50% - 150px);*/
+    margin-bottom: 0;
+    height:0;
+    /*height: calc(50% - 150px);*/
+    transition: height 1s ease-in;
+    z-index:10000;
+    background-color: #1A1A1A;
+}
+
+.slider-top-then{
+    height: calc(50% - 125px);
+}
+
+.slider-bottom{
+    width:100%;
+    margin-top:0;
+    background-color:#1A1A1A;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:0;
+    z-index: 100;
+    transition: height 1s linear;
+}
+
+.slider-bottom-then{
+    height:calc(50% - 10px);
+}
+.form-control{
+    margin: 0 auto;
+}

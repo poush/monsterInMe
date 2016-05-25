@@ -1,3 +1,29 @@
+$(function () {
+    // Event for submitting name
+
+    $('#submit').click(function () {
+        $('#first').removeClass('slide-to-top').addClass('slide-from-top');
+        $('#second').removeClass('slide-to-bottom').addClass('slide-from-bottom');
+        $('#content').addClass('content-then');
+        $('.logo').addClass('logo-then');
+        $('.slider-top').addClass('slider-top-then');
+        $('.slider-bottom').addClass('slider-bottom-then');
+        $('form[name="monster"]').addClass('monster-then');
+        setTimeout(reset,3000);
+    })
+});
+
+function reset() {
+
+    $('#first').removeClass('slide-from-top').addClass('slide-to-top');
+    $('#second').removeClass('slide-from-bottom').addClass('slide-to-bottom');
+    $('#content').removeClass('content-then');
+    $('.logo').removeClass('logo-then');
+    $('.slider-top').removeClass('slider-top-then');
+    $('.slider-bottom').removeClass('slider-bottom-then');
+    $('form[name="monster"]').removeClass('monster-then');
+}
+
 
 function generateName(form){
 	var old_name = form.realname.value.toLowerCase();
