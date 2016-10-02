@@ -2,8 +2,12 @@
 
 *{
     box-sizing: border-box;
-    display: block;
 
+
+}
+
+div {
+    display: block;
 }
 
 body,html {
@@ -62,9 +66,19 @@ img.second-then{
     /*display: none;*/
     margin-top:120px;
     transition: opacity 1s linear;
+
+
     /*z-index: -111;*/
 }
 
+@media(max-width:480px)
+{
+    .content {
+              position: relative;
+        top: 50%;
+        transform: translateY(0%);
+    }
+}
 .content-then{
     opacity:0;
 }
@@ -269,6 +283,7 @@ img.second-then{
 }
 
 .btn {
+    display: block;
     margin: 0 auto;
     margin-top: 20px;
     padding: 10px 15px;
