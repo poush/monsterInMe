@@ -12,7 +12,8 @@ $(function() {
     //     setTimeout(reset,2000);
     // })
 
-    $('#name').submit(function() {
+    $('#name').submit(function(ev) {
+        ev.preventDefault();
         $('#first').removeClass('slide-to-top').addClass('slide-from-top');
         $('#second').removeClass('slide-to-bottom').addClass('slide-from-bottom');
         $('#content').toggle({ effect: 'scale', direction: 'horizontal', origin: ['middle', 'center'], duration: 700 })
