@@ -78,6 +78,16 @@ img.second-then{
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
     -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: slide_from_top;
+    -moz-animation-duration: 0.7s;
+    -moz-animation-timing-function: ease;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
 }
 
 @-webkit-keyframes slide_from_top {
@@ -89,6 +99,14 @@ img.second-then{
     }
 }
 
+@keyframes slide_from_top {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top:calc(50% - 150px);
+    }
+}
 .slide-from-bottom{
     -webkit-animation-name: slide_from_bottom;
     -webkit-animation-duration: 0.7s;
@@ -98,9 +116,28 @@ img.second-then{
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
     -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: slide_from_bottom;
+    -moz-animation-duration: 0.7s;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slide_from_bottom {
+    0% {
+        bottom: 0%;
+    }
+    100% {
+        bottom:calc(50% - 50px);
+
+    }
+}
+
+@keyframes slide_from_bottom {
     0% {
         bottom: 0%;
     }
@@ -119,6 +156,15 @@ img.second-then{
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
     -webkit-animation-fill-mode: forwards;
+
+     -moz-animation-name: slide_to_top;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slide_to_top {
@@ -130,6 +176,15 @@ img.second-then{
     }
 }
 
+
+@keyframes slide_to_top {
+    100% {
+        top: 0%;
+    }
+    0% {
+        top:calc(50% - 150px);
+    }
+}
 .slide-to-bottom{
     -webkit-animation-name: slide_to_bottom;
     -webkit-animation-duration: 0.8s;
@@ -139,9 +194,28 @@ img.second-then{
     -webkit-animation-delay: 0;
     -webkit-animation-play-state: running;
     -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: slide_to_bottom;
+    -moz-animation-duration: 0.8s;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes slide_to_bottom {
+    100% {
+        bottom: 0%;
+    }
+    0% {
+        bottom:calc(50% - 50px);
+
+    }
+}
+
+@keyframes slide_to_bottom {
     100% {
         bottom: 0%;
     }
