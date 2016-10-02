@@ -1,24 +1,16 @@
-@import "bootstrap-form.css";
-body{
-    height:100%;
-    width:100%;
-    margin:0;
-}
-html{
-    height:80%;
-    width:100%;
-    margin:0;
-}
+@import "normalize.css";
+
 *{
     box-sizing: border-box;
     display: block;
 
 }
 
-img{
-    max-width: 100%;
-    height:auto;
+body,html {
+    margin: 0;
+    padding: 0;
 }
+
 
 .text-center{
     text-align: center;
@@ -26,11 +18,8 @@ img{
 
 /*Home Page styles codes*/
 
-body.home {
-    
+body {
     background-color:#1A1A1A;
-    height: 100%;
-    width:100%;
     color:#fff;
 }
 
@@ -82,8 +71,8 @@ img.second-then{
 
 .slide-from-top{
     -webkit-animation-name: slide_from_top;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-timing-function: ease;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal;
     -webkit-animation-delay: 0;
@@ -102,7 +91,7 @@ img.second-then{
 
 .slide-from-bottom{
     -webkit-animation-name: slide_from_bottom;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 0.7s;
     -webkit-animation-timing-function: ease-out;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal;
@@ -123,7 +112,7 @@ img.second-then{
 
 .slide-to-top{
     -webkit-animation-name: slide_to_top;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 0.8s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal;
@@ -143,7 +132,7 @@ img.second-then{
 
 .slide-to-bottom{
     -webkit-animation-name: slide_to_bottom;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 0.8s;
     -webkit-animation-timing-function: ease-out;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-direction: normal;
@@ -196,5 +185,23 @@ img.second-then{
     height:calc(50% - 10px);
 }
 .form-control{
+    display: block;
+    width:70%;
     margin: 0 auto;
+}
+.form-block {
+    width: 100%;
+    margin: 10px;
+}
+
+.btn {
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid #ffffcc;
+    background-color: #ffffcc;
+    color: #000;
 }
