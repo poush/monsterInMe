@@ -277,10 +277,27 @@ img.second-then{
     width:70%;
     margin: 0 auto;
 }
+
+input.form-control{
+    height: 40px;
+    background: none;
+    text-align: center;
+    border:none;
+    font-size: 25px;
+    color: #fff; 
+}
+
+input.form-control:focus{
+    border:none;
+    box-shadow: none;
+    outline: none;
+}
+
 .form-block {
     width: 100%;
     margin: 10px;
 }
+
 
 .btn {
     display: block;
