@@ -1,5 +1,5 @@
 @import "normalize.css";
-
+@import 'https://fonts.googleapis.com/css?family=Metal+Mania';
 *{
     box-sizing: border-box;
 
@@ -29,13 +29,14 @@ body {
 
 img.logo{
     display: block;
-    width:200px;
+    width:840px;
     margin:10px auto;
     transition: width 2s ease-out;
 }
 
 .logo-then{
     width:100px !important;
+    margin-top: 0px;
 }
 
 img.first{
@@ -315,4 +316,9 @@ input.form-control:focus{
 .lead {
         font-weight: 300;
     line-height: 1.4;
+}
+
+.monsterName h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 60px;
 }

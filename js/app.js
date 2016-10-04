@@ -17,7 +17,7 @@ $(function() {
         $('#first').removeClass('slide-to-top').addClass('slide-from-top');
         $('#second').removeClass('slide-to-bottom').addClass('slide-from-bottom');
         $('#content').toggle({ effect: 'scale', direction: 'horizontal', origin: ['middle', 'center'], duration: 700 })
-        setTimeout(reset, 2000);
+        setTimeout(reset, 1000);
     })
 });
 
@@ -30,7 +30,9 @@ function reset() {
 		$('form').hide();
     	$('#first').removeClass('slide-from-top').addClass('slide-to-top');
     	$('#second').removeClass('slide-from-bottom').addClass('slide-to-bottom');
-    	$('#content').toggle({ effect: 'scale', direction: 'horizontal', origin: ['bottom', 'center'], duration: 800 })
+    	setTimeout( function() {
+            $('#content').toggle({ effect: 'scale', direction: 'horizontal', origin: ['bottom', 'center'], duration: 800 })
+        }, 100);
 	});
         // $('#content').removeClass('content-then');
         // $('.logo').removeClass('logo-then');
@@ -242,37 +244,3 @@ Monster.prototype.capitaliseName = function(str) {
 		});
 };
 
-// function generateName(old_name) {
-
-//     var split_name = old_name.split("");
-//     var new_name = "";
-//     var hooman = "";
-//     var monstah = "";
-//     var i = 0;
-
-//     if (/^[A-Za-z\s]+$/.test(old_name)) {
-
-
-
-//         function capitaliseName(str) {
-//             return str.replace(/\w\S*/g, function(txt) {
-//                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
-//         }
-
-//         hooman = capitaliseName(old_name);
-//         monstah = capitaliseName(new_name);
-
-//         return monstah;
-//         console.log(new_name);
-//         console.log(monstah);
-
-//         console.log("Say goodbye to " + hooman + " and hello to " + monstah + "!");
-
-//         var node = document.getElementById('content');
-//         node.innerHTML = "<div class='mouth-strip'><img src='img/mouth-bg-top.png' /></div><div class='mouthbg'>Say goodbye to " + hooman + " and hello to <br> <div class='reveal'>" + monstah + "!</div></div><div class='mouth-strip'><img src='img/mouth-bg-bottom.png' /></div>";
-
-//         console.log("Script has finished");
-//     } else {
-//         alert("You gotta use real letters, thems the rules!");
-//     }
-// }
