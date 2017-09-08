@@ -22,18 +22,19 @@ $(function() {
 });
 
 function reset() {
-	var old_name = $('#old_name').val();
-	monster = new Monster(old_name);
-	monster.monsterous(function(new_name){
-		$('#mname').html(new_name);
-		$('.monsterName').show();
-		$('form').hide();
-    	$('#first').removeClass('slide-from-top').addClass('slide-to-top');
-    	$('#second').removeClass('slide-from-bottom').addClass('slide-to-bottom');
-    	setTimeout( function() {
+    var old_name = $('#old_name').val();
+    monster = new Monster(old_name);
+    monster.monsterous(function(new_name){
+        $('#mname').html(new_name).addClass('improve');
+        $('.monsterName').show();
+        $('form').hide();
+        $('#newName').addClass('improve');
+        $('#first').removeClass('slide-from-top').addClass('slide-to-top');
+        $('#second').removeClass('slide-from-bottom').addClass('slide-to-bottom');
+        setTimeout( function() {
             $('#content').toggle({ effect: 'scale', direction: 'horizontal', origin: ['bottom', 'center'], duration: 800 })
         }, 100);
-	});
+    });
         // $('#content').removeClass('content-then');
         // $('.logo').removeClass('logo-then');
         // $('.slider-top').removeClass('slider-top-then');
@@ -57,18 +58,18 @@ function Monster(old_name) {
         alert(' You gotta use real letters, thems the rules! ');
     }
     else
-    	this.is_valid = true;
+        this.is_valid = true;
 
 }
 
 Monster.prototype.MixAlgo = function() {
-	var i = 0;
-	var new_name = "";
-	var split_name = this.old_name.split("")
+    var i = 0;
+    var new_name = "";
+    var split_name = this.old_name.split("")
 
-    for (var letter in this.old_name) {
-    	if(!this.is_valid)
-    		return false;
+    for(var letter in this.old_name) {
+        if(!this.is_valid)
+            return false;
         switch (split_name[i].toLowerCase()) {
 
             case " ":
@@ -227,7 +228,7 @@ Monster.prototype.monsterous = function(cb) {
         var new_name = this.MixAlgo()
 
         if(!new_name)
-        	return cb();
+            return cb();
 
         this.new_name = new_name;
 
@@ -240,7 +241,7 @@ Monster.prototype.monsterous = function(cb) {
 
 Monster.prototype.capitaliseName = function(str) {
         return str.replace(/\w\S*/g, function(txt) {
-			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); 
-		});
+            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); 
+        });
 };
 

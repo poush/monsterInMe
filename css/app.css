@@ -2,8 +2,6 @@
 @import 'https://fonts.googleapis.com/css?family=Metal+Mania';
 *{
     box-sizing: border-box;
-
-
 }
 
 div {
@@ -67,8 +65,6 @@ img.second-then{
     /*display: none;*/
     margin-top:120px;
     transition: opacity 1s linear;
-
-
     /*z-index: -111;*/
 }
 
@@ -321,4 +317,10 @@ input.form-control:focus{
 .monsterName h1 {
     font-family: 'Metal Mania', cursive;
     font-size: 60px;
+    color: #ff4828;
+}
+
+.improve{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
