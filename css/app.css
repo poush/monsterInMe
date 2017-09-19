@@ -321,4 +321,11 @@ input.form-control:focus{
 .monsterName h1 {
     font-family: 'Metal Mania', cursive;
     font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.monsterName button {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
